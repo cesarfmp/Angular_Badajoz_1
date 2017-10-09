@@ -1,0 +1,103 @@
+Curso de Angular JS 1.x
+1)Fundamentos
+--> AngularJS
+
+--> React.js
+
+todomvc.com
+comparativa
+
+-----------------------------
+Tripas son jquery
+MEAN
+MongoDB
+ExpressJS
+AngularJS
+NodeJS
+Es todo javascript
+------------------------------------
+https://www.madewithangular.com/
+----------------------
+Modulos para lo que necesitemos
+angular-route.js
+--------------
+Programar con visual studio code
+Extension Angular 1 Javscript de John Papa
+Path Autocomplete para las rutas de los ficheros
+--------------------
+Fundamentos:
+Directivas
+Componentes
+MVC
+Aplicaciones SPA
+Promueve el uso de patrones, test-unitarios (jasmin)
+Se complementa con Bootstrap o Material Design
+-------------------------------
+Scope es el intermediario, objeto para que pueda accede tanto el controlador como la vista
+$scope.name
+---------------------
+SPA =carga completa en una sola pagina, las vistas ya están todas cargadas
+Ejemplo google docs
+-----------------------
+Directivas = ng-src, ng-class,...
+Es para modificar/ampliar los elementos del DOM
+
+Expresiones= es un lenguaje de plantillas
+
+Controlador = Es un view-controller
+Es todo lo ligado a la vista, lo demas al factory y al service
+
+Modelo = representacion de los datos
+Se define en el controlador o en el html
+
+ng-init --> define el modelo de datos en la vista, no usar
+--------------
+Doble binding
+
+html5 boilderplate extension para ahorrar codigo
+-------------------------
+Hola_mundo.html
+-------------------------
+Servidor local --> programas y caractreristicas --> añadir servicios
+internet information services
+Administrador de Internet Information Services
+---------------------------------
+canary.html
+angular batarang
+-------------------------
+Git
+https://git-scm.com/
+Es un sistema de control de versiones distribuido
+Comandos
+git init
+git add
+git commit para confirmar una version
+git checkout
+
+repositorio remoto
+---------------------
+github para copia en remoto
+gitlab
+bitbucker
+-----------------
+https://github.com/alce65/Angular_Badajoz/
+----------------------
+git --version
+
+github desktop
+para manejar github
+--
+https://github.com/cesarfmp/Angular_Badajoz_1
+---
+Gestor de paquetes
+node js
+https://nodejs.org/es/
+usamos para npm, que es el gestor de libreria
+
+
+
+ 
+
+
+
+
