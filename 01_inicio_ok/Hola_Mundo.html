@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola Mundo 2</title>
+        <meta name="description" content="Hola Mundo con Angular JS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../node_modules/angular/angular.min.js"></script>        
+        <script src="./app.js"></script>
+    </head>
+    <!-- ng-app solo se usa una vez y a partir del elemento que pongamos -->
+    <!-- Le indicamos la funcion constructora que creara el controller-->
+    <body ng-app="appModule" ng-controller="AppController">
+        <header>
+            <h1>Hola Mundo</h1>
+        </header>
+        <article>
+            <p>
+                <label for="name" >Di tu nombre</label>
+                <input id="name" type="text" ng-model="sName"></input>
+            </p>
+            <p>
+                <!-- le ponemos la funcion que maneja el evento-->
+                <button ng-click="btnBorrar()">Borrar</button>
+            </p>
+            <p>
+                Hola {{sName}}
+            </p>
+        </article>
+        <footer>
+            <p>Curso de {{sCurso}}</p>
+        </footer>
+    </body>
+</html>

@@ -93,10 +93,33 @@ Gestor de paquetes
 node js
 https://nodejs.org/es/
 usamos para npm, que es el gestor de libreria
+--------------------------
+npm init
+Crea package.json
+Guarda referencia de todo lo que haga falta
+Instalamos con el npm el angular
+npm install -s angular
+-s es para que guarde incluya la dependencia del angular en el package.json
 
+npm install -s bootstrap
+Con @ se puede poner el numero de la version
 
+npm install jquery
 
- 
+Si no existiera la carpeta node_modules
+npm install
+Nos instalan todo lo que ponga el fichero package.json
+-------------------------------
+Administrator de Internet Information Se
+Añadimos un nuevo sitio
+Luego habilitamos el examen de directorios
+Le damos accceso a todos los usuarios
+---------------------------
+Habilitar el examen de directorios en el
+----------
+Esto para indra
+npm config set proxy http://cfernandezmo:xxx@proxy.indra.es:8080
+----------
 
 
 
