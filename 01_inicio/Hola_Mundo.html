@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hola Mundo</title>
+        <meta name="description" content="Hola Mundo con Angular JS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>        
+    </head>
+    <body ng-app ng-init="sName='Pepe'; sCurso='AngularJS'">
+        <header>
+            <h1>Hola Mundo</h1>
+        </header>
+        <article>
+            <p>
+                <label for="name" >Di tu nombre</label>
+                <input id="name" type="text" ng-model="sName"></input>
+            </p>
+            <p>
+                <button ng-click="sName='';">Borrar</button>
+            </p>
+            <p>
+                Hola {{sName}}
+            </p>
+        </article>
+        <footer>
+            <p>Curso de {{sCurso}}</p>
+        </footer>
+    </body>
+</html>
