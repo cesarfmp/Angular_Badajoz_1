@@ -120,6 +120,14 @@ Habilitar el examen de directorios en el
 Esto para indra
 npm config set proxy http://cfernandezmo:xxx@proxy.indra.es:8080
 ----------
+ECMAScript 6
+Elementos nuevos
+----
+Nueva forma a partir del 1.2 John Papa, guia de estilo
+https://github.com/johnpapa/angular-styleguide
+
+
+
 
 
 
