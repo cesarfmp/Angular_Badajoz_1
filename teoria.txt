@@ -160,6 +160,54 @@ Todo es por el estandar Web Components:
 * templates: sistema de plantillas nativas en el navegador
 * shadow dom --> es un dom indepediente
 * html imports --> carga de documentos html
+-----------------------------
+Dia 2
+Forma actual de usar angular
+Modulos son cajas para guardar cosas, son afuncionales
+
+Nos vamos a definir varios modulos
+Estructura de directorios por características o por menu:
+
+app
+  common
+  product
+  user
+css
+dist
+img
+lib
+
+Estructuras por capas:
+controllers
+model
+services
+
+-------------------
+Elementos nuevos:
+module
+|
+controller
+servicios
+filtros
+directivas
+-----
+Generadores de plantillas
+Angular seed
+https://github.com/angular/angular-seed
+Clonamos y ejecutamos npm install
+jasmin, karma y protractor --> para pruebas
+Nos genera un par de vista
+
+ngBoilerplate <---
+https://github.com/ngbp/ngbp
+Git clone, npm -g install grunt-cli karma bower,luego en nuestro repositorio local instalamos
+
+Instala Bootstrap, 
+
+Yeoman
+
+----
+
 
 
 
