@@ -1,14 +1,17 @@
-class CabezaController {
+class ListaController {
     
     // Inyeccion de dependecias
     constructor() {}
 
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
-        this.sTitulo = "Hola Mundo";
+        this.nombreNuevo = "";
+        this.arrayNombres = new Array();
     };    
 
-   
+    btnAnadir() {
+        this.arrayNombres.push(this.nombreNuevo);
+    }
     //$onChanges (changesObj) { };
     //$onDestroy() { };
 }
@@ -17,11 +20,9 @@ class CabezaController {
 // Para hacer referencia a este componente usamos app-cabeza por llamarse AppCabeza
 // Podemos usar la plantilla directamente en vez de la url
 angular.module('sharedModule')
-        .component('appCabeza', {
-            template:`<header>
-                        <h1>{{$ctrl.sTitulo.toUpperCase()}}</h1>
-                    </header>`,
-            controller: CabezaController,
+        .component('appLista', {
+            templateUrl:'./shared/lista-partial.html',
+            controller: ListaController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
         });
 

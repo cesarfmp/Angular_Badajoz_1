@@ -1,11 +1,11 @@
-class CabezaController {
+class PieController {
     
     // Inyeccion de dependecias
     constructor() {}
 
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
-        this.sTitulo = "Hola Mundo";
+        this.sCurso = "Angular JS";
     };    
 
    
@@ -17,11 +17,9 @@ class CabezaController {
 // Para hacer referencia a este componente usamos app-cabeza por llamarse AppCabeza
 // Podemos usar la plantilla directamente en vez de la url
 angular.module('sharedModule')
-        .component('appCabeza', {
-            template:`<header>
-                        <h1>{{$ctrl.sTitulo.toUpperCase()}}</h1>
-                    </header>`,
-            controller: CabezaController,
+        .component('appPie', {
+            template:`Curso de {{$ctrl.sCurso}}`,
+            controller: PieController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
         });
 

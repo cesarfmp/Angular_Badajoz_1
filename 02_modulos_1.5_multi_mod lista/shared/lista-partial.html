@@ -1,0 +1,14 @@
+<article>    
+    <p>
+        <!-- le ponemos la funcion que maneja el evento-->
+        <input id="nombreNuevo" type="text" ng-model="$ctrl.nombreNuevo"></input>
+        <button ng-click="$ctrl.btnAnadir()">Añadir</button>
+    </p>
+    <p>
+        <ul>
+            <li ng-repeat="nombre in $ctrl.arrayNombres track by $index">
+                {{nombre}}
+            </li>
+        </ul>
+    </p>
+</article>
