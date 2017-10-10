@@ -1,14 +1,19 @@
-class TextoController {
+class ListaController {
     
     // Inyeccion de dependecias
     constructor() {}
 
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
-       this.verTexto = false;
-       this.precio = 23.56;
+        //this.nombreNuevo = ""; // No hace falta porque hay ya unng-model que lo inicializa
+        this.arrayNombres = new Array();
+        console.log(this);
     };    
 
+    btnAnadir() {
+        this.arrayNombres.push(this.nombreNuevo);
+        console.log(this);
+    }
     //$onChanges (changesObj) { };
     //$onDestroy() { };
 }
@@ -17,9 +22,9 @@ class TextoController {
 // Para hacer referencia a este componente usamos app-cabeza por llamarse AppCabeza
 // Podemos usar la plantilla directamente en vez de la url
 angular.module('sharedModule')
-        .component('appTexto', {
-            templateUrl:'./shared/texto-partial.html',
-            controller: TextoController,
+        .component('appLista', {
+            templateUrl:'./shared/lista-partial.html',
+            controller: ListaController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
         });
 

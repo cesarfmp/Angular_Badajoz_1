@@ -201,12 +201,52 @@ Nos genera un par de vista
 ngBoilerplate <---
 https://github.com/ngbp/ngbp
 Git clone, npm -g install grunt-cli karma bower,luego en nuestro repositorio local instalamos
-
 Instala Bootstrap, 
 
 Yeoman
-
+http://yeoman.io/
+Se instala desde la web
+Va con Node.js
 ----
+Directivas y compilacion
+Compilador HTML
+Son anotaciones de como se tiene que construir ese elemento del dom
+Ej.- cuando encuentra ng-...
+ng-model
+....
+Expresiones 
+{{Dato}}
+Operaciones aritmeticas {Dato+4}
+{{"WW".toUpperCase()}} 
+{{Dato==1?"Red":"Blue"}}
+-------------
+Iteaciones
+ngRepeat --> iteraccion sobre un array
+ng-if
+------
+Includes HTML
+<div ng-include="include-me.html"></div>
+
+<ng-include src="include-me.html">
+----------
+Mas directivas
+ngBind
+ngCloak --> se encarga del refresco
+ngHide
+ngShow
+----------
+Eventos
+ngClick
+ngDblclick
+ngBlur
+ngFocus
+ngSubmit
+ngMouseEnter
+-------
+Filtros de formato
+Es para dar formato a la informacion que se muestra
+------------
+
 
 
 

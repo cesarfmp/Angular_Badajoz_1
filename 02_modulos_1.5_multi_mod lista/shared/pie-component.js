@@ -19,7 +19,7 @@ class PieController {
 angular.module('sharedModule')
         .component('appPie', {
             template:`<br/>--------------------------<br/>
-                    Curso de {{$ctrl.sCurso}}`,
+                    Curso de {{$ctrl.sCurso | uppercase}}`,
             controller: PieController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
         });

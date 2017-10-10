@@ -1,14 +1,14 @@
-class TextoController {
+class PieController {
     
     // Inyeccion de dependecias
     constructor() {}
 
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
-       this.verTexto = false;
-       this.precio = 23.56;
+        this.sCurso = "Angular JS";
     };    
 
+   
     //$onChanges (changesObj) { };
     //$onDestroy() { };
 }
@@ -17,9 +17,10 @@ class TextoController {
 // Para hacer referencia a este componente usamos app-cabeza por llamarse AppCabeza
 // Podemos usar la plantilla directamente en vez de la url
 angular.module('sharedModule')
-        .component('appTexto', {
-            templateUrl:'./shared/texto-partial.html',
-            controller: TextoController,
+        .component('appPie', {
+            template:`<br/>--------------------------<br/>
+                    Curso de {{$ctrl.sCurso}}`,
+            controller: PieController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
         });
 

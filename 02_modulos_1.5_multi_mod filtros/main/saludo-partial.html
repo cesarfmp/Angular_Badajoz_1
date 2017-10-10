@@ -1,0 +1,13 @@
+<article>
+    <p>
+        <label for="name" >Di tu nombre</label>
+        <input id="name" type="text" ng-model="vm.sName"></input>
+    </p>
+    <p>
+        <!-- le ponemos la funcion que maneja el evento-->
+        <button ng-click="vm.btnBorrar()">Borrar</button>
+    </p>
+    <p>
+        Hola {{vm.sName}}
+    </p>
+</article>

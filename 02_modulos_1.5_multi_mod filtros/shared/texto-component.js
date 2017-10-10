@@ -6,7 +6,6 @@ class TextoController {
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
        this.verTexto = false;
-       this.precio = 23.56;
     };    
 
     //$onChanges (changesObj) { };
