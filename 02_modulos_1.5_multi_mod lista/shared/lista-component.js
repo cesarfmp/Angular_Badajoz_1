@@ -5,12 +5,14 @@ class ListaController {
 
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
-        this.nombreNuevo = "";
+        //this.nombreNuevo = ""; // No hace falta porque hay ya unng-model que lo inicializa
         this.arrayNombres = new Array();
+        console.log(this);
     };    
 
     btnAnadir() {
         this.arrayNombres.push(this.nombreNuevo);
+        console.log(this);
     }
     //$onChanges (changesObj) { };
     //$onDestroy() { };
