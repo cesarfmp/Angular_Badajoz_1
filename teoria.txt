@@ -1,4 +1,7 @@
 Curso de Angular JS 1.x
+
+https://github.com/alce65/Angular_Badajoz_1
+
 1)Fundamentos
 --> AngularJS
 
@@ -76,6 +79,9 @@ git checkout
 
 repositorio remoto
 ---------------------
+Nueva guía de estilo
+Recomendaciones de como trabajar
+
 github para copia en remoto
 gitlab
 bitbucker
@@ -125,6 +131,38 @@ Elementos nuevos
 ----
 Nueva forma a partir del 1.2 John Papa, guia de estilo
 https://github.com/johnpapa/angular-styleguide
+-----------------------
+ECMAScript6 --> inicio 1.5
+Es el lenguaje que interpreta el javascript
+Aparecen:
+Constante y variables
+Funciones arrow
+Template String
+Valores por defecto
+Clases
+Modulos
+Promesas
+
+const y let para definir variables con ambito de existencia de bloque
+-----------------------------
+Promesas
+Un objeto promesas representa un valorque todavia
+hacerAlgoPromesa().then(function() { c
+
+--------------------
+Guia de estilo 1.5
+https://github.com/
+Aparecen los componentes
+Es un template + 1 controller
+Todo es por el estandar Web Components:
+* Custom elements: nos permite definir nuevos elementos html
+	Nos podemos crear los elementos que nos de la gana
+* templates: sistema de plantillas nativas en el navegador
+* shadow dom --> es un dom indepediente
+* html imports --> carga de documentos html
+
+
+
 
 
 
