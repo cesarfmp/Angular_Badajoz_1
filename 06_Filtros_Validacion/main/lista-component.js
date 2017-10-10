@@ -1,17 +1,12 @@
 class ListaController {
     
     $onInit () {
-    
-        this.opcion = {};
+        this.isSubmit = false;
+    }
 
-        this.provincias=[
-            {idProvincia:2, nombre:"Castellón"},
-            {idProvincia:3, nombre:"Alicante"},
-            {idProvincia:1, nombre:"Valencia"},
-            {idProvincia:7, nombre:"Teruel"},  
-            {dProvincia:5, nombre:"Tarragona"}
-            ];
-        this.miProvinciaSeleccionada = null;    
+    enviarFormulario() {
+       console.debug("entra");
+        this.isSubmit = true;
     }
 }
     

@@ -1,46 +1,19 @@
-<form name="myform" novalidate>
-    <label for="resultado">Imprimir resultado:</label>
-    <input id="resultado" type="checkbox" id="resultado" name="resultado" ng-model="$ctrl.opcion.resultado" ng-true-value=("SI") ng-false-value=("NO")   >
-
-    <label for="tono">Tono claro:</label>
-    <input id="tono" type="checkbox" id="tono" name="tono" ng-model="$ctrl.opcion.tono" ng-true-value=("SI") ng-false-value=("NO")>
+<form name="myform" novalidate ng-submit="$ctrl.enviarFormulario()">
     
-
-    <p>Provincias</p>
-    <p>
-        <select ng-model = "$ctrl.miProvinciaSeleccionada" ng-options = "provincia as provincia.nombre for provincia in $ctrl.provincias track by provincia.idProvincia">
-            <option value="">--Elige opcion--</option>
-        </select>
-            
-    </p>
-
     <p>Nombre:</p>
     <p><input type="text" id="nombre" name="nombre"
     ng-model="user.nombre" ng-required="true" ng-minlength="2" ng-model-options=" {updateOn: 'blur'}"></p>
     
     <span class="error-message"ng-show="myform.nombre.$dirty && myform.nombre.$error.required">El nombre es obligatorio</span>
-    
+    <span class="error-message"ng-show="myform.nombre.$dirty && myform.nombre.$error.minlength">La longitud debe ser mayor de 2</span>
 
-    <p>Apellido:</p>
-    <p><input type="text" id="apellido" name="apellido"
-    ng-model="user.apellido" ng-required="true" ng-minlength="5" ng-model-options=" {updateOn: 'blur'}"></p>
-    
-    <span class="error-message"ng-show="myform.apellido.$dirty && myform.apellido.$error.required">El apellido es obligatorio</span>
-    
-
-    <p>Telefono:</p>
-    <p><input type="text" id="telefono" name="telefono"
-    ng-model="user.telefono" ng-required="true" ng-minlength="9" ng-model-options=" {updateOn: 'blur'}"></p>
-    
-    <span class="error-message"ng-show="myform.telefono.$dirty && myform.telefono.$error.required">El telefono es obligatorio</span>
-
-    <span class="error-message"ng-show="myform.telefono.$invalid">El telefono debe ocupar 9 digitos</span>
+    <p>
+        <button type="submit" ng-disabled="!myform.$valid">Enviar</button>
+    </p>
 
 </form>
 
+<div ng-if="$ctrl.isSubmit">
 <h1>Resultado</h1>
-Opcion imprimir {{$ctrl.opcion.resultado}}
-<br/>
-Opcion tono {{$ctrl.opcion.tono}}
-<br/>
-Provincia {{$ctrl.miProvinciaSeleccionada}}
+</div>
+
