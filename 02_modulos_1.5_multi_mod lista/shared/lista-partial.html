@@ -1,15 +1,32 @@
 <article>  
     <p>
         <!-- le ponemos la funcion que maneja el evento-->
-        <input id="nombreNuevo" type="text" ng-model="$ctrl.nombreNuevo"></input>
-        <button ng-click="$ctrl.btnAnadir()">Añadir</button>
+        <label>Elige el orden que deseas:</label> 
+        <select name="orden" ng-model="$ctrl.orden">
+            <option value="asc">ASC</option>
+            <option value="desc">DESC</option>
+          </select>
+        <br/>
+        <label>Elige el genero literario que deseas:</label> 
+        <select name="genero" ng-model="$ctrl.genero">
+            <option value="asc">ASC</option>
+            <option value="desc">DESC</option>
+          </select>
+        <br/>
+        <label>Campos a mostrar:</label> 
+        <input type="checkbox" name="pais" value="Pais" ng-model="$ctrl.verPais"> Pais<br>
+        <input type="checkbox" name="fechaNacimiento" value="FechaNacimiento" ng-model="$ctrl.verFecha"> Fecha Nacimiento<br>       
     </p>
-    <div ng-if="$ctrl.arrayNombres.length > 0" >
+    
         <h1>Lista de Nombres</h1>
         <ul>
-            <li ng-repeat="nombre in $ctrl.arrayNombres track by $index">
-                {{nombre}}
+            <li ng-repeat="oAutor in $ctrl.aAutores | filter: $ctrl.genero | orderBy: $ctrl.orden">
+                <b>{{oAutor.nombre}} {{oAutor.apellido}}</b>				 
+                {{$ctrl.verPais ? ' - ' + oAutor.pais : ''}} 
+                {{$ctrl.verFecha ? '- Nacido en ' + (oAutor.fechaNacim | date:'yyyy') : ''}}
+                - Genero: <span ng-repeat="genero in oAutor.generos">
+                {{ genero }}{{ !$last ? ", " : "."}} <span>
             </li>
         </ul>
-    </div>
+    
 </article>  

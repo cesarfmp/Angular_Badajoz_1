@@ -6,6 +6,7 @@ class PieController {
     // Es el constructor, para evitar los problemas de instaciacion
     $onInit() {
         this.sCurso = "Angular JS";
+        this.fecha = new Date();
     };    
 
    
@@ -19,6 +20,8 @@ class PieController {
 angular.module('sharedModule')
         .component('appPie', {
             template:`<br/>--------------------------<br/>
+                    Fecha: {{$ctrl.fecha  | date:'fullDate'}}
+                    <br/>
                     Curso de {{$ctrl.sCurso | uppercase}}`,
             controller: PieController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
