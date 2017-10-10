@@ -18,7 +18,8 @@ class PieController {
 // Podemos usar la plantilla directamente en vez de la url
 angular.module('sharedModule')
         .component('appPie', {
-            template:`Curso de {{$ctrl.sCurso}}`,
+            template:`<br/>--------------------------<br/>
+                    Curso de {{$ctrl.sCurso}}`,
             controller: PieController,
             //controllerAs: '$ctrl',  --> por defecto usar $ctrl
         });
