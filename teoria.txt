@@ -246,6 +246,68 @@ ngMouseEnter
 Filtros de formato
 Es para dar formato a la informacion que se muestra
 ------------
+Internacionalizacion
+npm install -s angular-i18n
+--------------
+filter
+limitTo
+order by
+
+coleccion objeto
+nombre
+apellido
+fecha
+nacimiento
+
+
+Elige el orden que deseas
+Elige el genero literario todos
+Campos a mostrar
+pais
+fecha de nacimiento
+--------------------
+Estilos
+Manipular clases
+ngClass se le pasa objeto con los nombres de la clase
+<p ng-class="{positivo:total>=0,negativo:total<0}">
+------------------------
+Carga de ficheros dinamica, para que no salga imagenes incorrectas mediante se carga
+
+<ng-src="images//{{fileName}}">
+
+ng-href
+Para crear un select: ngOptions
+-------------------------------------
+https://angular-ui.github.io/
+https://angular-ui.github.io/bootstrap/
+https://angular-ui.github.io/ui-calendar/
+-----------------------------------
+Funciones del controlador
+--> inicializar variables ($onInit)
+--> Creacion metodos que añaden funcionalidad al scope
+No debe hacer:
+--> Manipular el DOM --> elementos inyectables
+--> Formatear la entrada --> tenemos los filtros
+--> Incluir codigo repetido en diversos controladores --> se hace en los servicios
+--> Intercambiar estado entre los controladores
+------------------------
+Elementos inyectables como dependencias
+Hay 5 tipos:
+constant --> son servicios que proporcinan valores constantes
+value --> son servicios que proporcinan valores, crea una variable global que es accesible en aquellos elementos en los cuales inyecto ese servicio
+
+service: Servicios
+factory: Factorias
+provider: Proveedores
+
+Estos elementos pueden tener funciones. Son objetos javascript y de tipo singletons
+Angular permite añadir otros metodos a los servicios
+
+
+
+
+
+-------------------------------------------------
 
 
 
