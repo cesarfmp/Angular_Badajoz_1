@@ -21,12 +21,9 @@ class PadreController {
         this.$http({
             method: 'GET',
             url: 'http://restcountries.eu/rest/v1/region/africa'
-            }).then(function successCallback(response) {
-                // this callback will be called asynchronously
-                // when the response is available
-                console.log(response)
-
-                me.provincias =response.data;
+            }).then(response => {
+                this.provincias =response.data;
+            
             }, function errorCallback(response) {
                 // called asynchronously if an error occurs
                 // or server returns response with an error status.
