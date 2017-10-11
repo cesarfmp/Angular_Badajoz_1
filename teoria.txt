@@ -337,8 +337,16 @@ angular.module("appModule")
   }])
 
 
+$scope tiene la propiedad $watch para variables y $wactchCollection para variables de tipo coleccion
+    
+Con eso vigilamos los cambios en variables
 
+-------------------
+$emit
+$broadcast()
+$on()
 
+Usamos para manejar eventos entre los componentes
 
 
 
