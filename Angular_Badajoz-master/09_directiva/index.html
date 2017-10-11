@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<!-- Ejemplo de AngularJS;
+	Se muestra la creación de un módulo y dentro de él de un controlador
+	empleando la inyección de dependencias para definir el scope-->
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3, angularJS">
+	<meta name="author" content="Alejandro" >
+	<meta name="description" content="Ejercicios de angularJS">
+	<meta name="generator" content="Visual Studio Code">
+	<meta charset="UTF-8">
+	<title>Directivas</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="icon" href="fav_icon.png">
+	<script src="../node_modules/jquery/dist/jquery.js"></script>
+	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="./js/appModule.js"></script>
+	<script src="./js/appController.js"></script>
+	<script src="../common/commonModule.js"></script>
+	<script src="../common/commonDirectivas.js"></script>
+</head>
+
+<body data-ng-app="appModule" data-ng-controller="AppController as $ctrl">
+	<header>
+		<h1>Directivas</h1>
+	</header>
+	<article>
+		<h2>...</h2>
+		<p>...</b></p>
+
+	</article>
+	
+	<p id="div1"></p>
+	
+	<p id="div2"></p>
+
+	<div  data-app-pie></div>
+
+	<app-pie autor="Alejandro L. Cerezo"></app-pie>
+	
+</body>
+
+<script>
+	var oElement = document.querySelector('#div1')
+	oElement.innerHTML="<ul><li>Hola que tal desde JS</li></ul>"
+	var oElementJQ = $('#div2')
+
+	oElementJQ[0].innerHTML="<ul><li>Hola que tal desde JQuery</li></ul>"
+	
+
+	//oElemntJQ.html("<ul><li>Hola que tal desde JQuery</li></ul>")
+	console.dir(oElement)
+	console.dir(oElementJQ)
+</script>
+</html>

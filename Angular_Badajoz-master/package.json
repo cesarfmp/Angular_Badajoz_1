@@ -1,0 +1,35 @@
+{
+  "name": "angular_badajoz",
+  "version": "1.0.0",
+  "description": "Curso de Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alce65/Angular_Badajoz.git"
+  },
+  "keywords": [
+    "Web",
+    "SPA",
+    "AngularJS"
+  ],
+  "author": "Alejandro Cerezo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alce65/Angular_Badajoz/issues"
+  },
+  "homepage": "https://github.com/alce65/Angular_Badajoz#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-i18n": "^1.6.6",
+    "angular-local-storage": "^0.7.1",
+    "angular-locale": "^0.3.1",
+    "angular-route": "^1.6.6",
+    "angular-sanitize": "^1.6.6",
+    "angular-ui-router": "^1.0.0-rc.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

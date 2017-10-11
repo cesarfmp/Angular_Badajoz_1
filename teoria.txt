@@ -303,11 +303,39 @@ provider: Proveedores
 Estos elementos pueden tener funciones. Son objetos javascript y de tipo singletons
 Angular permite añadir otros metodos a los servicios
 
+angular.module('appModule').controller('MainCtrl', ["$scope",'<Service>'],
+	function($scope,<Service>) {
+
+Servicio$log que sustituye al console.log
+
+angular.module('appModule').controller('MainCtrl', ["$scope",'$log'],
+	function($scope,$log) {
 
 
-
-
+$locale
+Es para cambiar el idioma
+$locale.id="es-es";
 -------------------------------------------------
+Angular Local-Storage
+Ejemplo de como usar un servicio externo
+Cookies y sessionStorage
+Para guardar informacion local de forma segura
+Es mejor que las cookies
+localStorage
+
+https://github.com/grevory/angular-local-storage
+Lo ha metido
+
+npm install -s angular-local-storage
+Hay que configurar config y room
+El provider es el que genera el servicio que es el que lo configura
+Servicio se puede invocar pero si no hay que configurarlo
+
+angular.module("appModule")
+.config(['localStorageServiceProvider', 	function(localStorageServiceProvider) {
+    localStorageServiceProvider.setPrefix('ls')
+  }])
+
 
 
 
