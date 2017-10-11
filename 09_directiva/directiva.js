@@ -13,7 +13,8 @@ angular.module('appModule')
 			console.log(scope);
 			console.log(elem);
 
-			elem[0].innerHTML +="<p>Esto lo añade la directiva</p>"
+			//elem[0].innerHTML +="<p>Esto lo añade la directiva</p>"
+			elem.html("<p>Esto lo añade la directiva</p>");
 		}
 
 	}

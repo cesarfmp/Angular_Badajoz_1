@@ -1,0 +1,10 @@
+<p>
+        <label for="name" >Di tu nombre</label>
+        <input id="name" type="text" ng-model="$ctrl.oDatos.nombre"></input>
+    </p>
+
+<div style="border-style: solid;border-color:black;  margin: 10px 10px 10px 10px;">
+    Componente Padre
+    <app-hijo o-datos="$ctrl.oDatos"></app-hijo>
+    <p>{{$ctrl.aviso}}</p>
+</div>
