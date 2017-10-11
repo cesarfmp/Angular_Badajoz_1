@@ -347,8 +347,44 @@ $broadcast()
 $on()
 
 Usamos para manejar eventos entre los componentes
+--------------------------
+Directivas o Componentes
+Directivas la creamos con directive, lo creamos con un nombre, y con una funcion que devuelve un objeto
 
+.directive("miDirectiva", function () {
+	return {
+		restrict: "AE"
+		template: {…}
+	}
+})
 
+Despues usariamos mi-directiva
+------------------------------------------
+Componentes
+Propiedades:
+parent
+binding --> son los atributos que recibe el componente
+Un componente no maneja el dom
+Con require sacamos un puntero del padre al hijo
+
+----------------------------------------------
+$http.get()
+$http.post()
+---
+Api para hacer pruebas
+
+http://restcountries.eu/rest/v1/region/
+
+http://restcountries.eu/rest/v1/region/africa
+http://restcountries.eu/rest/v1/region/europe
+response => {
+  this.provincias =response.data;
+            
+}
+
+-----------------------------------
+Angular $resource
+---------
 
 
 
