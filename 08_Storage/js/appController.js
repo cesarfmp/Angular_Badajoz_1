@@ -1,13 +1,18 @@
 angular.module('appModule')
+// 5) Inyectamos el servicio 'localStorageService'
 .controller('AppController', ["$scope", 'localStorageService', function ($scope, localStorageService) {
     
    	$scope.sEmpresa = "CAS Training"
-
+    // con get obtenemos el valor del localStorage
     var tempTareas = localStorageService.get('tareas');
 
     $scope.aTareas = tempTareas && tempTareas.split('\n') || [];
+    
+    // $scope tiene la propiedad $watch para variables y $wactchCollection para variables de tipo coleccion
+    // Con eso vigilamos los cambios en variables
     $scope.$watchCollection('aTareas', function () {
-    localStorageService.add('tareas', $scope.aTareas.join('\n'));   
+      // con add añadimos
+      localStorageService.add('tareas', $scope.aTareas.join('\n'));   
       }, true);
 
     $scope.addTarea = function () {
